@@ -1,0 +1,23 @@
+<label>
+  Số thứ 1
+  <input type="number" [(ngModel)]="calculator.num1">
+</label>
+<br>
+<label>
+  <select [(ngModel)]="calculator.operand">
+    <option value="add">+</option>
+    <option value="subtract">-</option>
+    <option value="multiply">*</option>
+    <option value="divide">/</option>
+  </select>
+</label>
+<br>
+<label>
+  Số thứ 2
+  <input type="number" [(ngModel)]="calculator.num2">
+</label>
+<br>
+<button (click)="calculate()">Tính</button>
+<label>
+  <input type="number" disabled [value]="calculator.result">
+</label>
